@@ -44,7 +44,11 @@ body {
   margin-bottom: 1rem;
 }
 
-.site-title {
+#wiux-link {
+  text-decoration: none;
+}
+
+#site-title {
   font-size: clamp(2rem, 6vw, 3.25rem);
   font-weight: bold;
   margin: 0;
@@ -52,7 +56,7 @@ body {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
 }
 
-.site-sub {
+#site-sub {
   color: var(--purple-light);
   margin-top: 0.5rem;
   font-size: 0.95rem;
@@ -73,6 +77,92 @@ body {
   text-align: center;
 }
 
+/* ---------- search + sort controls ---------- */
+
+.controls {
+  display: flex;
+  gap: 0.75rem;
+  box-sizing: border-box;
+  width: calc(100% - 3rem);
+  max-width: 960px;
+  margin: 2rem auto 0;
+}
+
+#search {
+  display: block;
+  box-sizing: border-box;
+  flex: 1;
+  min-width: 0;
+  padding: 0.75rem 1.25rem;
+  font: inherit;
+  color: var(--ink);
+  background-color: var(--card-bg);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition:
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+#search::placeholder {
+  color: var(--muted-gray);
+}
+
+#search:focus {
+  outline: none;
+  border-color: var(--purple);
+  box-shadow: 0 0 0 3px rgba(116, 78, 150, 0.2);
+}
+
+.sort-select-wrap {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.sort-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.75rem 2rem 0.75rem 1rem;
+  font: inherit;
+  color: var(--ink);
+  background-color: var(--card-bg);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  cursor: pointer;
+  transition:
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.sort-select:focus {
+  outline: none;
+  border-color: var(--purple);
+  box-shadow: 0 0 0 3px rgba(116, 78, 150, 0.2);
+}
+
+.sort-select-wrap::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  width: 0.5em;
+  height: 0.5em;
+  margin-top: -0.3em;
+  border-right: 2px solid var(--purple);
+  border-bottom: 2px solid var(--purple);
+  transform: rotate(45deg);
+  pointer-events: none;
+}
+
+@media (max-width: 480px) {
+  .controls {
+    flex-direction: column;
+  }
+}
+
 /* ---------- episode card ---------- */
 
 .episode-card {
@@ -81,6 +171,7 @@ body {
   border-radius: 10px;
   padding: 1.5rem;
   position: relative;
+  min-width: 0; /* grid items default to min-width:auto, which ignores nowrap text truncation */
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
@@ -103,13 +194,28 @@ body {
 .episode-card-summary {
   list-style: none; /* removes default marker in most browsers */
   cursor: pointer;
+  position: relative;
 }
 .episode-card-summary::-webkit-details-marker {
   display: none; /* removes it in Chrome/Safari */
 }
 
+.episode-card-summary::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0.1rem;
+  width: 0.55em;
+  height: 0.55em;
+  margin-top: -0.3em;
+  border-right: 2px solid var(--purple);
+  border-bottom: 2px solid var(--purple);
+  transform: rotate(45deg);
+  transition: transform 0.2s ease;
+}
+
 .episode-card[open] .episode-card-summary::after {
-  transform: rotate(180deg);
+  transform: rotate(225deg);
 }
 
 .episode-number {
@@ -184,6 +290,41 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+/* ---------- back to top ---------- */
+
+.back-to-top {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--purple);
+  color: #ffffff;
+  font-size: 1.25rem;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease,
+    visibility 0.2s;
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.back-to-top:hover {
+  background-color: var(--purple-dark);
 }
 
 /* ---------- footer ---------- */

@@ -8,21 +8,49 @@
   </head>
   <body>
     <header class="site-header">
-      <div class="freq">WIUX B-Side Internet Radio</div>
-      <h1 class="site-title">GARLIC BREAD RADIO</h1>
-      <p class="site-sub">Every setlist from every show EVER</p>
+      <div class="freq">
+        <a id="wiux-link" href="https://wiux.org" target="_blank"
+          >WIUX B-Side Internet Radio</a
+        >
+      </div>
+      <h1 id="site-title">GARLIC BREAD RADIO</h1>
+      <p id="site-sub"></p>
     </header>
 
     <main>
+      <div class="controls">
+        <input
+          type="text"
+          id="search"
+          placeholder="Search for artists, tracks, or episodes..."
+        />
+
+        <div class="sort-select-wrap">
+          <select id="sort-select" class="sort-select">
+            <option value="date-desc">Newest first</option>
+            <option value="date-asc">Oldest first</option>
+          </select>
+        </div>
+      </div>
+
       <section id="episode-grid" class="episode-grid" aria-live="polite">
         <!-- episode cards get injected here -->
-        <p class="loading-msg">tuning in&hellip;</p>
+        <p class="loading-msg">One moment...</p>
       </section>
     </main>
 
     <footer class="site-footer">
       <p>Thanks for visiting</p>
     </footer>
+
+    <button
+      id="back-to-top"
+      class="back-to-top"
+      aria-label="Back to top"
+      title="Back to top"
+    >
+      &uarr;
+    </button>
 
     <!-- episode detail template -->
     <template id="episode-card-template">

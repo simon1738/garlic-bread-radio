@@ -2,6 +2,7 @@
 // Get a free key at https://www.last.fm/api/account/create
 const LASTFM_API_KEY = "287bf7be3a6bde9f6174c639a306b459";
 const LASTFM_ENDPOINT = "https://ws.audioscrobbler.com/2.0/";
+let episodes = [];
 
 // ---- HELPERS ----
 
@@ -51,6 +52,7 @@ function renderEpisode(episode, index) {
 
   const tracklistEl = node.querySelector(".tracklist");
   const trackTemplate = document.getElementById("track-row-template");
+  const trackRows = [];
 
   episode.tracklist.forEach((t, i) => {
     const row = trackTemplate.content.cloneNode(true);
@@ -63,9 +65,19 @@ function renderEpisode(episode, index) {
 
     tracklistEl.appendChild(row);
 
-    // fetch art asynchronously and fill it in once it arrives
-    fetchTrackArt(t.artist, t.track).then((artUrl) => {
-      if (artUrl) img.src = artUrl;
+    trackRows.push({ img, artist: t.artist, track: t.track });
+  });
+
+  // wait to fetch album art until the card is actually opened
+  const cardEl = node.querySelector(".episode-card");
+  let artLoaded = false;
+  cardEl.addEventListener("toggle", () => {
+    if (!cardEl.open || artLoaded) return;
+    artLoaded = true;
+    trackRows.forEach(({ img, artist, track }) => {
+      fetchTrackArt(artist, track).then((artUrl) => {
+        if (artUrl) img.src = artUrl;
+      });
     });
   });
 
@@ -73,10 +85,13 @@ function renderEpisode(episode, index) {
 }
 
 async function init() {
+  document.getElementById("site-sub").textContent = "Every setlist from every show EVER";
+
+
   const grid = document.getElementById("episode-grid");
   try {
     const res = await fetch("episodes.json");
-    const episodes = await res.json();
+    episodes = await res.json();
 
     grid.innerHTML = ""; // clear "tuning in..." message
 
@@ -86,9 +101,66 @@ async function init() {
       .sort((a, b) => new Date(b.date) - new Date(a.date))
       .forEach((episode, i) => grid.appendChild(renderEpisode(episode, i)));
   } catch (err) {
-    grid.innerHTML = `<p class="loading-msg">couldn't load episodes — check episodes.json</p>`;
+    grid.innerHTML = `<p class="loading-msg">Couldn't load episodes</p>`;
     console.error(err);
   }
 }
+
+// ---- SEARCH ----
+const inputElement = document.getElementById("search");
+
+inputElement.addEventListener("input", () => {
+  const query = inputElement.value.toLowerCase();
+  const grid = document.getElementById("episode-grid");
+  grid.innerHTML = "";
+  episodes
+    .filter(
+      (episode) =>
+        episode.title.toLowerCase().includes(query) ||
+        episode.description?.toLowerCase().includes(query) ||
+        episode.tracklist.some(
+          (t) =>
+            t.track.toLowerCase().includes(query) ||
+            t.artist.toLowerCase().includes(query)
+        )
+    )
+    .forEach((episode, i) => grid.appendChild(renderEpisode(episode, i)));
+
+    if (grid.innerHTML === "") {
+      grid.innerHTML = `<p class="loading-msg">Didn't find anything...</p>`;
+    }
+});
+
+// ---- SORT ----
+
+const sortSelect = document.getElementById("sort-select");
+
+sortSelect.addEventListener("change", () => {
+  const sortValue = sortSelect.value;
+  const grid = document.getElementById("episode-grid");
+  grid.innerHTML = "";
+
+  let sortedEpisodes = [...episodes];
+  if (sortValue === "date-desc") {
+    sortedEpisodes.sort((a, b) => new Date(b.date) - new Date(a.date));
+  } else if (sortValue === "date-asc") {
+    sortedEpisodes.sort((a, b) => new Date(a.date) - new Date(b.date));
+  }
+
+  sortedEpisodes.forEach((episode, i) => grid.appendChild(renderEpisode(episode, i)));
+});
+
+
+// ---- BACK TO TOP ----
+
+const backToTopBtn = document.getElementById("back-to-top");
+
+window.addEventListener("scroll", () => {
+  backToTopBtn.classList.toggle("visible", window.scrollY > 400);
+});
+
+backToTopBtn.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
 
 init();
