@@ -1,0 +1,502 @@
+[
+  {
+    "id": 24,
+    "title": "JIMMY AND KYLER",
+    "date": "May 5, 2026",
+    "description": "Two of Garlic Bread's biggest supporters share their invaluable musical wisdom for the season finale",
+    "tracklist": [
+      { "artist": "Jimmy Buffett", "track": "The Weather Is Here, Wish You Were Beautiful" },
+      { "artist": "The Beatles", "track": "Paperback Writer" },
+      { "artist": "Tom Petty", "track": "Wildflowers" },
+      { "artist": "A Tribe Called Quest", "track": "After Hours" },
+      { "artist": "Conner Smith", "track": "Steal My Thunder (feat. Tucker Wetmore)" },
+      { "artist": "Eagles", "track": "Tequila Sunrise" },
+      { "artist": "America", "track": "Sister Golden Hair" },
+      { "artist": "Steely Dan", "track": "Midnite Cruiser" },
+      { "artist": "Oasis", "track": "Supersonic" },
+      { "artist": "Ambrosia", "track": "Biggest Part of Me" },
+      { "artist": "The Allman Brothers Band", "track": "Melissa" }
+    ]
+  },
+  
+  {
+    "id": 23,
+    "title": "Whatever",
+    "date": "April 28, 2026",
+    "description": "Almost the end of the semester...",
+    "tracklist": [
+      { "artist": "Stevie Wonder", "track": "For Once in My Life" },
+      { "artist": "Beck", "track": "Mixed Bizness" },
+      { "artist": "Thundercat & Mac Miller", "track": "She Knows Too Much" },
+      { "artist": "Hum", "track": "I'd Like Your Hair Long" },
+      { "artist": "2Pac", "track": "How Do U Want It (feat. K-Ci & JoJo)" },
+      { "artist": "Steely Dan", "track": "Only A Fool Would Say That" },
+      { "artist": "Marcy Playground", "track": "Ancient Walls of Flowers" },
+      { "artist": "The Allman Brothers Band", "track": "Blue Sky" },
+      { "artist": "Queens of the Stone Age", "track": "Little Sister" },
+      { "artist": "Jane Remover", "track": "Your Clothes" },
+      { "artist": "Buzzcocks", "track": "Ever Fallen in Love (With Someone You Shouldn't've)" },
+      { "artist": "Mac Demarco", "track": "Treat Her Better" }
+    ]
+  },
+  
+  {
+    "id": 22,
+    "title": "Harmonica",
+    "date": "April 14, 2026",
+    "description": "Blues Traveler makes Garlic Bread history as the first artist to have multiple songs in the same set because John Popper is a harmonica wizard",
+    "tracklist": [
+      { "artist": "Tom Petty", "track": "You Don't Know How It Feels" },
+      { "artist": "Lowertown", "track": "Big Thumb" },
+      { "artist": "Black Sabbath", "track": "The Wizard" },
+      { "artist": "Blues Traveler", "track": "Hook" },
+      { "artist": "Béla Fleck & The Flecktones", "track": "The Sinister Minister" },
+      { "artist": "Stevie Wonder", "track": "At Last" },
+      { "artist": "Supertramp", "track": "Take the Long Way Home" },
+      { "artist": "Norma Tanega", "track": "Walkin' My Cat Named Dog" },
+      { "artist": "Fat, Evil Children", "track": "Weedpuller" },
+      { "artist": "Tony Joe White", "track": "Polk Salad Annie" },
+      { "artist": "Blues Traveler", "track": "Love and Greed" }
+    ]
+  },
+  
+  {
+    "id": 21,
+    "title": "Lovely Songs for Lovely Weather",
+    "date": "April 7, 2026",
+    "description": null,
+    "tracklist": [
+      { "artist": "binki", "track": "Body Heat" },
+      { "artist": "Electric Light Orchestra", "track": "Steppin' Out" },
+      { "artist": "Eddie Vedder", "track": "No Ceiling" },
+      { "artist": "Blur", "track": "Good Song" },
+      { "artist": "Isadora", "track": "Caminando" },
+      { "artist": "Pinback", "track": "Shag" },
+      { "artist": "Clairo", "track": "North" },
+      { "artist": "Nick Drake", "track": "Bryter Layter" },
+      { "artist": "Blind Melon", "track": "Walk" },
+      { "artist": "Hum", "track": "Why I Like the Robins" },
+      { "artist": "Wilco", "track": "Kamera" },
+      { "artist": "Firefall", "track": "You Are the Woman" },
+      { "artist": "Stereolab", "track": "Miss Modular" }
+    ]
+  },
+  
+  {
+    "id": 20,
+    "title": "INTERNATIONAL",
+    "date": "March 31, 2026",
+    "description": "Shoutout to Kyler for the idea and to everyone who contributed a song",
+    "tracklist": [
+      { "artist": "Masayoshi Takanaka", "track": "Oh! Tengo Suerte" },
+      { "artist": "Bob Marley & The Wailers", "track": "Buffalo Soldier" },
+      { "artist": "Zé Roberto", "track": "Lotus 72 D" },
+      { "artist": "Bruno Pernadas", "track": "Lafeta Uti" },
+      { "artist": "Gypsy Kings", "track": "Baila Me" },
+      { "artist": "Amanaz", "track": "Khala My Friend" },
+      { "artist": "Dry Bread", "track": "Yamar" },
+      { "artist": "Brown Eyed Girls", "track": "이상한 일" },
+      { "artist": "Enej", "track": "Radio Hello" },
+      { "artist": "Les Ya Toupas Du Zaire", "track": "Je ne bois pas beaucoup" }
+    ]
+  },
+  
+  {
+    "id": 19,
+    "title": "Los Angeles",
+    "date": "March 24, 2026",
+    "description": null,
+    "tracklist": [
+      { "artist": "Anderson .Paak", "track": "Lite Weight" },
+      { "artist": "FIDLAR", "track": "Drone" },
+      { "artist": "The Doors", "track": "Soul Kitchen" },
+      { "artist": "Thundercat", "track": "Walkin'" },
+      { "artist": "Bad Religion", "track": "21st Century (Digital Boy)" },
+      { "artist": "Frank Ocean", "track": "Swim Good" },
+      { "artist": "Red Hot Chili Peppers", "track": "Dani California" },
+      { "artist": "Eazy-E", "track": "No More ?'s" },
+      { "artist": "Cat Scan", "track": "Dirty Movie" },
+      { "artist": "Herb Alpert", "track": "Route 101" },
+      { "artist": "Solange", "track": "Borderline (An Ode to Self Care) (feat. Q-Tip)" },
+      { "artist": "The Bangles", "track": "Standing In the Hallway" }
+    ]
+  },
+  
+  {
+    "id": 18,
+    "title": "International Women's Day",
+    "date": "March 10, 2026",
+    "description": "Shoutout to every woman",
+    "tracklist": [
+      { "artist": "Akiko Yano", "track": "Iroha Ni Kompeito" },
+      { "artist": "Elastica", "track": "Stutter" },
+      { "artist": "Peggy Gou", "track": "Back To One" },
+      { "artist": "Natalia Lafourcade", "track": "El lugar correcto" },
+      { "artist": "L7", "track": "Fake Friends (feat. Joan Jett)" },
+      { "artist": "Kelis", "track": "Suga Honey Iced Tea" },
+      { "artist": "Fiona Apple", "track": "Window" },
+      { "artist": "X-Ray Spex", "track": "Identify" },
+      { "artist": "Clairo", "track": "Bags" },
+      { "artist": "Hole", "track": "Plump" },
+      { "artist": "Little Simz", "track": "Gorilla" },
+      { "artist": "Linda Ronstadt", "track": "You're No Good" }
+    ]
+  },
+  
+  {
+    "id": 17,
+    "title": "Songs That Aliens Would Probably Like",
+    "date": "March 3, 2026",
+    "description": null,
+    "tracklist": [
+      { "artist": "Smash Mouth", "track": "Then the Morning Comes" },
+      { "artist": "Michael Jackson", "track": "Sunset Driver (Demo)" },
+      { "artist": "Spacehog", "track": "Starside" },
+      { "artist": "Angine de poitrine", "track": "Fabienk" },
+      { "artist": "John Legend", "track": "Green Light (feat. André 3000)" },
+      { "artist": "Electric Light Orchestra", "track": "Starlight" },
+      { "artist": "Jamiroquai", "track": "Starchild" },
+      { "artist": "2 In a Room", "track": "Wiggle It" },
+      { "artist": "Casiopea", "track": "Midnight Rendezvous" },
+      { "artist": "Earth, Wind & Fire", "track": "Star" }
+    ]
+  },
+
+  {
+    "id": 16,
+    "title": "Black History Month",
+    "date": "February 24, 2026",
+    "description": "Next year this will be a whole month of shows",
+    "tracklist": [
+      { "artist": "Al Green", "track": "Love and Happiness" },
+      { "artist": "The Roots", "track": "The Next Movement" },
+      { "artist": "Curtis Mayfield", "track": "Move On Up" },
+      { "artist": "Lenny Kravitz", "track": "California" },
+      { "artist": "Diana Ross & The Supremes", "track": "Love Child" },
+      { "artist": "Death", "track": "Politicians In My Eyes" },
+      { "artist": "Wes Montgomery", "track": "Windy" },
+      { "artist": "Nancy Wilson", "track": "If I Ever Lose This Heaven" },
+      { "artist": "Fousheé", "track": "do you have a soul?" },
+      { "artist": "Big L", "track": "I Don't Understand It" },
+      { "artist": "Ramsey Lewis", "track": "Summer Breeze" },
+      { "artist": "KAYTRANADA", "track": "Stepped On" }
+    ]
+  },
+
+  {
+    "id": 15,
+    "title": "Valentine's Day",
+    "date": "February 17, 2026",
+    "description": "(Songs with love in the title)",
+    "tracklist": [
+      { "artist": "The Miracles", "track": "Love Machine (feat. Billy Griffin)" },
+      { "artist": "Jamiroquai", "track": "You Are My Love" },
+      { "artist": "Magdalena Bay", "track": "Love Is Everywhere" },
+      { "artist": "Nirvana", "track": "Love Buzz" },
+      { "artist": "The Whispers", "track": "It's a Love Thing" },
+      { "artist": "The Dandy Warhols", "track": "Love Song" },
+      { "artist": "Justin Timberlake", "track": "My Love (feat. T.I.)" },
+      { "artist": "Bloc Party", "track": "This Modern Love" },
+      { "artist": "Piero Piccioni", "track": "Easy Lovers" },
+      { "artist": "Philip Bailey & Phil Collins", "track": "Easy Lover" }
+    ]
+  },
+  
+  {
+    "id": 14,
+    "title": "Names",
+    "date": "February 3, 2026",
+    "description": null,
+    "tracklist": [
+      { "artist": "Al Green", "track": "Judy" },
+      { "artist": "Jefferson Starship", "track": "Jane" },
+      { "artist": "Weezer", "track": "My Name Is Jonas" },
+      { "artist": "X-Teens", "track": "Baby John" },
+      { "artist": "Herb Alpert & The Tijuana Brass", "track": "Felicia" },
+      { "artist": "Tommy Tutone", "track": "867-5309/Jenny" },
+      { "artist": "The Internet", "track": "Gabby (feat. Janelle Monáe)" },
+      { "artist": "Ween", "track": "Gabrielle" },
+      { "artist": "The Band", "track": "Ophelia" },
+      { "artist": "Cat Stevens", "track": "Matthew & Son" },
+      { "artist": "Tom Petty & The Heartbreakers", "track": "Mary Jane's Last Dance" },
+      { "artist": "Rick James", "track": "Mary Jane" },
+      { "artist": "Alex G", "track": "Bobby" }
+    ]
+  },
+
+  {
+    "id": 13,
+    "title": "First Show Back",
+    "date": "January 27, 2026",
+    "description": "First songs on the album",
+    "tracklist": [
+      { "artist": "Foo Fighters", "track": "This Is a Call" },
+      { "artist": "Elastica", "track": "Mad Dog" },
+      { "artist": "Pinback", "track": "Tripoli" },
+      { "artist": "Alice In Chains", "track": "We Die Young" },
+      { "artist": "PinkPantheress", "track": "Another Life (feat. Rema)" },
+      { "artist": "Funk Revelation", "track": "Funky One" },
+      { "artist": "Ninajirachi", "track": "London Song" },
+      { "artist": "Steve Lacy", "track": "Looks" },
+      { "artist": "Ween", "track": "Exactly Where I'm At" },
+      { "artist": "Booker T. & The M.G.'s", "track": "Green Onions" },
+      { "artist": "Blur", "track": "She's So High" },
+      { "artist": "The Breeders", "track": "New Year" },
+      { "artist": "Fatboy Slim", "track": "Right Here, Right Now" }
+    ]
+  },
+
+  {
+    "id": 12,
+    "title": "wgatever i want",
+    "date": "December 17, 2025",
+    "description": "Misspelled it in the Instagram post which means it's too late to fix now",
+    "tracklist": [
+      { "artist": "Faye Webster", "track": "Lego Ring" },
+      { "artist": "Rick James", "track": "Be My Lady" },
+      { "artist": "Ween", "track": "Take Me Away" },
+      { "artist": "Aphex Twin", "track": "Cock/ver10" },
+      { "artist": "The Dandy Warhols", "track": "Boys Better" },
+      { "artist": "Daft Punk", "track": "Crescendolls" },
+      { "artist": "No Doubt", "track": "Just a Girl" },
+      { "artist": "Death Grips", "track": "I've Seen Footage" },
+      { "artist": "Blur", "track": "Charmless Man" },
+      { "artist": "underscores", "track": "Cops and Robbers" },
+      { "artist": "Basement Jaxx", "track": "Hot 'n Cold" },
+      { "artist": "Jamiroquai", "track": "Alright" }
+    ]
+  },
+  
+  {
+    "id": 11,
+    "title": "Awesome Riffs",
+    "date": "December 10, 2025",
+    "description": null,
+    "tracklist": [
+      { "artist": "Mountain", "track": "Mississippi Queen" },
+      { "artist": "Dire Straits", "track": "Money for Nothing" },
+      { "artist": "My Bloody Valentine", "track": "Only Shallow" },
+      { "artist": "Boris", "track": "Electric" },
+      { "artist": "Nirvana", "track": "Swap Meet" },
+      { "artist": "Jimi Hendrix", "track": "Ezy Ryder" },
+      { "artist": "Soundgarden", "track": "Spoonman" },
+      { "artist": "Oasis", "track": "Underneath The Sky" },
+      { "artist": "Slightly Stoopid", "track": "Closer to the Sun" },
+      { "artist": "Alice In Chains", "track": "Man in the Box" },
+      { "artist": "Alex G", "track": "Master" },
+      { "artist": "Pearl Jam", "track": "Go" },
+      { "artist": "Queens of the Stone Age", "track": "No One Knows" }
+    ]
+  },
+  
+  {
+    "id": 10,
+    "title": "Winter",
+    "date": "December 3, 2025",
+    "description": null,
+    "tracklist": [
+      { "artist": "Papa Bear & His Cubs", "track": "You're So Fine" },
+      { "artist": "Cannonball Adderley", "track": "Hurricane Connie" },
+      { "artist": "Steely Dan", "track": "Any Major Dude Will Tell You" },
+      { "artist": "Earl Sweatshirt & The Alchemist", "track": "Mac Deuce" },
+      { "artist": "Aphex Twin", "track": "Fingerbib" },
+      { "artist": "Surely Shirley", "track": "Little One" },
+      { "artist": "Steve Miller Band", "track": "Winter Time" },
+      { "artist": "Clairo", "track": "Glory of the Snow" },
+      { "artist": "Jamiroquai", "track": "Picture of My Life" },
+      { "artist": "Radiohead", "track": "Blow Out" },
+      { "artist": "Oklou & Bladee", "track": "take me by the hand" },
+      { "artist": "Fiona Apple", "track": "Criminal" },
+      { "artist": "Kid Cudi", "track": "Cudi Zone" }
+    ]
+  },
+  
+  {
+    "id": 9,
+    "title": "70s Rock",
+    "date": "November 19, 2025",
+    "description": "Shoutout to Owen for the idea. Unfortunately Games People Play is NOT from the 70s",
+    "tracklist": [
+      { "artist": "Paul Simon", "track": "Me and Julio Down By the Schoolyard" },
+      { "artist": "Electric Light Orchestra", "track": "Sweet Talkin' Woman" },
+      { "artist": "The Edgar Winter Group", "track": "Free Ride" },
+      { "artist": "Steve Miller Band", "track": "Dance, Dance, Dance" },
+      { "artist": "Steely Dan", "track": "Peg" },
+      { "artist": "Dire Straits", "track": "Lady Writer" },
+      { "artist": "The Alan Parsons Project", "track": "Games People Play" },
+      { "artist": "Rush", "track": "Fly By Night" },
+      { "artist": "Fleetwood Mac", "track": "Go Your Own Way" },
+      { "artist": "The Police", "track": "Message In A Bottle" },
+      { "artist": "The Cars", "track": "Just What I Needed" },
+      { "artist": "ZZ Top", "track": "La Grange" }
+    ]
+  },
+
+  {
+    "id": 8,
+    "title": "Food",
+    "date": "November 12, 2025",
+    "description": null,
+    "tracklist": [
+      { "artist": "Fiona Apple", "track": "Fast As You Can" },
+      { "artist": "Plumtree", "track": "Aquarius" },
+      { "artist": "Outkast", "track": "Spaghetti Junction" },
+      { "artist": "Blur", "track": "Coffee & TV" },
+      { "artist": "Herbie Hancock", "track": "Watermelon Man" },
+      { "artist": "The Presidents of the United States of America", "track": "Peaches" },
+      { "artist": "Damu The Fudgemunk & MF DOOM", "track": "Coco Mango Diced" },
+      { "artist": "Save Ferris", "track": "Spam" },
+      { "artist": "Beach House", "track": "Lemon Glow" },
+      { "artist": "2oo7", "track": "Cherry Sunday" }
+    ]
+  },
+  
+  {
+    "id": 7,
+    "title": "Animals",
+    "date": "November 5, 2025",
+    "description": null,
+    "tracklist": [
+      { "artist": "The Doors", "track": "Peace Frog" },
+      { "artist": "Flying Lotus", "track": "Turkey Dog Coma" },
+      { "artist": "Birdbrain", "track": "Inside Out" },
+      { "artist": "Clairo", "track": "Terrapin" },
+      { "artist": "Viagra Boys", "track": "Secret Canine Agent" },
+      { "artist": "That Dog.", "track": "Ms. Wrong" },
+      { "artist": "Papa Bear & His Cubs", "track": "Sweetest Thing on This Side of Heaven" },
+      { "artist": "DOMi & JD Beck & Mac Demarco", "track": "TWO SHRiMPS" },
+      { "artist": "Toadies", "track": "Possum Kingdom" },
+      { "artist": "Sweet", "track": "Fox On the Run" },
+      { "artist": "Ana Frango Elétrico", "track": "Electric Fish" },
+      { "artist": "Jamiroquai", "track": "Butterfly" },
+      { "artist": "Weezer", "track": "Crab" }
+    ]
+  },
+
+  {
+    "id": 6,
+    "title": "HALLOWEEN!!!!!",
+    "date": "October 29, 2025",
+    "description": null,
+    "tracklist": [
+      { "artist": "Vince Guaraldi Trio", "track": "Great Pumpkin Waltz" },
+      { "artist": "Dead Man's Bones", "track": "In the Room Where You Sleep" },
+      { "artist": "45 Grave", "track": "Evil" },
+      { "artist": "Oingo Boingo", "track": "Dead Man's Party" },
+      { "artist": "Ramones", "track": "Pet Sematary" },
+      { "artist": "October Country", "track": "My Girlfriend Is a Witch" },
+      { "artist": "Siouxsie & The Banshees", "track": "Halloween" },
+      { "artist": "Beck", "track": "Scarecrow" },
+      { "artist": "Blue Öyster Cult", "track": "(Don't Fear) The Reaper" },
+      { "artist": "The Blasters", "track": "Dark Night" },
+      { "artist": "David Bowie", "track": "Scary Monsters (And Super Creeps)" },
+      { "artist": "Credence Clearwater Revival", "track": "Sinister Purpose" }
+    ]
+  },
+
+  {
+    "id": 5,
+    "title": "Fall",
+    "date": "October 22, 2025",
+    "description": null,
+    "tracklist": [
+      { "artist": "The Internet", "track": "Under Control" },
+      { "artist": "Hum", "track": "Stars" },
+      { "artist": "Sorry", "track": "Cigarette Packet" },
+      { "artist": "The Smashing Pumpkins", "track": "Pennies" },
+      { "artist": "L7", "track": "Stuck Here Again" },
+      { "artist": "Kero Kero Bonito", "track": "Flyway" },
+      { "artist": "Faye Webster", "track": "Come to Atlanta" },
+      { "artist": "Matt Martians", "track": "Dance Shoos" },
+      { "artist": "Pinhead Gunpowder", "track": "2nd Street" },
+      { "artist": "Ramones", "track": "Don't Come Close" },
+      { "artist": "Sharon Jones & the Dap Kings", "track": "How Long Do I Have to Wait for You?" },
+      { "artist": "Thundercat", "track": "Jethro" },
+      { "artist": "The Smiths", "track": "This Night Has Opened My Eyes"},
+      { "artist": "Her's", "track": "What Once Was" }
+    ]
+  },
+  
+  {
+    "id": 4,
+    "title": "TV/Movies",
+    "date": "October 15, 2025",
+    "description": null,
+    "tracklist": [
+      { "artist": "David Bowie", "track": "Queen Bitch" },
+      { "artist": "Mick Harvey", "track": "Out of Time Man" },
+      { "artist": "The Cure", "track": "Six Different Ways" },
+      { "artist": "Plumtree", "track": "Scott Pilgrim" },
+      { "artist": "Eels", "track": "Royal Pain" },
+      { "artist": "Santa Esmeralda", "track": "Don't Let Me Be Misunderstood" },
+      { "artist": "Cat Stevens", "track": "Here Comes My Baby" },
+      { "artist": "Nirvana", "track": "Heart-Shaped Box" },
+      { "artist": "Nat King Cole", "track": "Almost Like Being In Love" },
+      { "artist": "Jamiroquai", "track": "Canned Heat" },
+      { "artist": "The Bombay Royale", "track": "Henna Henna" },
+      { "artist": "Echo & The Bunnymen", "track": "The Killing Moon" }
+    ]
+  },
+
+  {
+    "id": 3,
+    "title": "Colors",
+    "date": "October 8, 2025",
+    "description": null,
+    "tracklist": [
+      { "artist": "Chenayder & MAVI", "track": "Colors" },
+      { "artist": "Green Day", "track": "At the Library" },
+      { "artist": "Yellow Magic Orchestra", "track": "Technopolis" },
+      { "artist": "Earth, Wind & Fire", "track": "Evolution Orange" },
+      { "artist": "Goldfinger", "track": "Superman" },
+      { "artist": "Mac Demarco", "track": "Blue Boy" },
+      { "artist": "No Doubt", "track": "Platinum Blonde Life" },
+      { "artist": "Jamiroquai", "track": "Black Devil Car" },
+      { "artist": "Jean Dawson", "track": "Black Sugar" },
+      { "artist": "Stevie Wonder", "track": "Golden Lady" },
+      { "artist": "Gorillaz", "track": "Dirty Harry (feat. Bootie Brown)" },
+      { "artist": "Blur", "track": "Blue Jeans" }
+    ]
+  },
+
+  {
+    "id": 2,
+    "title": "Songs I Listened to This Summer",
+    "date": "October 1, 2025",
+    "description": null,
+    "tracklist": [
+      { "artist": "Tame Impala", "track": "Breathe Deeper" },
+      { "artist": "Fleetwood Mac", "track": "Believe Me" },
+      { "artist": "Lowertown", "track": "Bucktooth" },
+      { "artist": "Magdalena Bay", "track": "Death & Romance" },
+      { "artist": "Jean Dawson", "track": "Rock A Bye Baby" },
+      { "artist": "Stereolab", "track": "Ping Pong" },
+      { "artist": "Jamiroquai", "track": "Seven Days in Sunny June" },
+      { "artist": "Beck", "track": "Earthquake Weather" },
+      { "artist": "Oasis", "track": "She's Electric" },
+      { "artist": "Rimera", "track": "OH NO! THEY BLEW UP SUNRISE MOUNTAIN!" },
+      { "artist": "Earth, Wind & Fire", "track": "Can't Let Go" },
+      { "artist": "Fruit Bats", "track": "A Lingering Love" }
+    ]
+  },
+
+  {
+    "id": 1,
+    "title": "First Show EVER",
+    "date": "September 9, 2025",
+    "description": "First songs on the album",
+    "tracklist": [
+      { "artist": "The Smashing Pumpkins", "track": "Cherub Rock" },
+      { "artist": "The Cure", "track": "In Between Days" },
+      { "artist": "Violent Femmes", "track": "Blister In The Sun" },
+      { "artist": "Kero Kero Bonito", "track": "Outside" },
+      { "artist": "Reel Big Fish", "track": "Sell Out" },
+      { "artist": "Daft Punk", "track": "One More Time" },
+      { "artist": "Save Ferris", "track": "The World Is New" },
+      { "artist": "Jamiroquai", "track": "Virtual Insanity" },
+      { "artist": "Gorillaz", "track": "Re-Hash" }
+
+      
+    ]
+  }
+]

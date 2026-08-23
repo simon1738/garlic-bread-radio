@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Garlic Bread Radio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="freq">WIUX B-Side Internet Radio</div>
+      <h1 class="site-title">GARLIC BREAD RADIO</h1>
+      <p class="site-sub">Every setlist from every show EVER</p>
+    </header>
+
+    <main>
+      <section id="episode-grid" class="episode-grid" aria-live="polite">
+        <!-- episode cards get injected here -->
+        <p class="loading-msg">tuning in&hellip;</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Thanks for visiting</p>
+    </footer>
+
+    <!-- episode detail template -->
+    <template id="episode-card-template">
+      <details class="episode-card">
+        <summary class="episode-card-summary">
+          <div class="episode-card-header">
+            <span class="episode-number"></span>
+            <span class="episode-date"></span>
+          </div>
+          <h2 class="episode-title"></h2>
+        </summary>
+
+        <p class="episode-description"></p>
+        <ol class="tracklist"></ol>
+      </details>
+    </template>
+
+    <!-- track row template -->
+    <template id="track-row-template">
+      <li class="track-row">
+        <span class="track-index"></span>
+        <img class="track-art" alt="" loading="lazy" />
+        <div class="track-meta">
+          <span class="track-name"></span>
+          <span class="track-artist"></span>
+        </div>
+      </li>
+    </template>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,204 @@
+:root {
+  --purple: #744e96;
+  --purple-dark: #322141;
+  --purple-light: #f0e6f7;
+  --ink: #000000;
+  --text-gray: #666666;
+  --muted-gray: #888888;
+  --bg: #ffffff;
+  --card-bg: #eaeaea;
+
+  --font-body: Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---------- header ---------- */
+
+.site-header {
+  padding: 3rem 1.5rem 2rem;
+  text-align: center;
+  background-color: var(--purple);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.freq {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  color: var(--purple);
+  background-color: #ffffff;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+
+.site-title {
+  font-size: clamp(2rem, 6vw, 3.25rem);
+  font-weight: bold;
+  margin: 0;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.site-sub {
+  color: var(--purple-light);
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+}
+
+/* ---------- grid ---------- */
+
+.episode-grid {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.loading-msg {
+  color: var(--muted-gray);
+  text-align: center;
+}
+
+/* ---------- episode card ---------- */
+
+.episode-card {
+  background: var(--card-bg);
+  color: var(--ink);
+  border-radius: 10px;
+  padding: 1.5rem;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.episode-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.episode-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: var(--purple);
+  margin-bottom: 0.5rem;
+}
+
+.episode-card-summary {
+  list-style: none; /* removes default marker in most browsers */
+  cursor: pointer;
+}
+.episode-card-summary::-webkit-details-marker {
+  display: none; /* removes it in Chrome/Safari */
+}
+
+.episode-card[open] .episode-card-summary::after {
+  transform: rotate(180deg);
+}
+
+.episode-number {
+  font-weight: 700;
+}
+
+.episode-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 0 0 1.25rem;
+  line-height: 1.2;
+}
+
+.episode-description {
+  color: var(--text-gray);
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin: -0.75rem 0 1.25rem;
+}
+
+/* ---------- tracklist ---------- */
+
+.tracklist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.track-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 0.9rem;
+}
+
+.track-index {
+  color: var(--purple);
+  font-weight: bold;
+  width: 1.5rem;
+  flex-shrink: 0;
+}
+
+.track-art {
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+  background: var(--muted-gray);
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.track-meta {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.track-name {
+  font-weight: 700;
+  color: var(--purple);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.track-artist {
+  color: var(--text-gray);
+  font-size: 0.8rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ---------- footer ---------- */
+
+.site-footer {
+  text-align: center;
+  padding: 2rem 1.5rem 2.5rem;
+  font-size: 0.8rem;
+  color: var(--muted-gray);
+}
+
+/* ---------- responsive ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    scroll-behavior: auto !important;
+  }
+}
