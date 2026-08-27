@@ -1,0 +1,61 @@
+/* ---------- home page ---------- */
+
+.home-main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+.home-intro {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.home-intro h2 {
+  font-size: 1.6rem;
+  margin: 0 0 0.75rem;
+  color: var(--purple);
+}
+
+.home-intro p {
+  color: var(--text-gray);
+  line-height: 1.5;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.home-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.home-link-card {
+  display: block;
+  background: var(--card-bg);
+  color: var(--ink);
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition:
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.home-link-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.home-link-card h3 {
+  margin: 0 0 0.5rem;
+  color: var(--purple);
+}
+
+.home-link-card p {
+  margin: 0;
+  color: var(--text-gray);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}

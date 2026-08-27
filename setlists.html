@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Garlic Bread Radio</title>
+    <title>Setlists - Garlic Bread Radio</title>
     <link rel="stylesheet" href="css/base.css" />
-    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/setlists.css" />
   </head>
   <body>
     <header class="site-header">
@@ -42,46 +42,36 @@
 
       <nav id="nav">
         <ul>
-          <li><a href="index.html" class="nav-link active">Home</a></li>
-          <li><a href="setlists.html" class="nav-link">Setlists</a></li>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="setlists.html" class="nav-link active">Setlists</a></li>
           <li><a href="#" class="nav-link">Listen Now</a></li>
           <li><a href="#" class="nav-link">Stats</a></li>
           <li><a href="#" class="nav-link">My Scrobbles</a></li>
           <li><a href="about.html" class="nav-link">About</a></li>
         </ul>
       </nav>
+      <p id="site-sub">Every setlist from every show EVER</p>
     </header>
 
-    <main class="home-main">
-      <section class="home-intro">
-        <h2>Welcome.</h2>
-        <p>
-          The official site of the world-renowned Garlic Bread Radio. Expect ska
-          punk, bedroom pop, experimental rap, acid jazz, grunge, neo soul, and
-          anything else that sounds good. Hosted by Simon. Website also by
-          Simon.
-        </p>
+    <main>
+      <div class="controls">
+        <input
+          type="text"
+          id="search"
+          placeholder="Search for artists, tracks, or episodes..."
+        />
 
-        <br />
+        <div class="sort-select-wrap">
+          <select id="sort-select" class="sort-select">
+            <option value="date-desc">Newest first</option>
+            <option value="date-asc">Oldest first</option>
+          </select>
+        </div>
+      </div>
 
-        <p></p>
-      </section>
-
-      <section class="home-links">
-        <a class="home-link-card" href="https://www.wiux.org/">
-          <h3>WIUX</h3>
-          <p>The source!</p>
-        </a>
-        <a
-          class="home-link-card"
-          href="https://www.instagram.com/garlicbreadwiux"
-        >
-          <h3>Instagram</h3>
-          <p>
-            Send me song suggestions, criticize me, or just get updates. The
-            world is your oyster.
-          </p>
-        </a>
+      <section id="episode-grid" class="episode-grid" aria-live="polite">
+        <!-- episode cards get injected here -->
+        <p class="loading-msg">One moment...</p>
       </section>
     </main>
 
@@ -98,8 +88,37 @@
       &uarr;
     </button>
 
+    <!-- episode detail template -->
+    <template id="episode-card-template">
+      <details class="episode-card">
+        <summary class="episode-card-summary">
+          <div class="episode-card-header">
+            <span class="episode-number"></span>
+            <span class="episode-date"></span>
+          </div>
+          <h2 class="episode-title"></h2>
+        </summary>
+
+        <p class="episode-description"></p>
+        <ol class="tracklist"></ol>
+      </details>
+    </template>
+
+    <!-- track row template -->
+    <template id="track-row-template">
+      <li class="track-row">
+        <span class="track-index"></span>
+        <img class="track-art" alt="" loading="lazy" />
+        <div class="track-meta">
+          <span class="track-name"></span>
+          <span class="track-artist"></span>
+        </div>
+      </li>
+    </template>
+
     <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/Observer.min.js"></script>
     <script src="js/base.js"></script>
+    <script src="js/setlists.js"></script>
   </body>
 </html>
