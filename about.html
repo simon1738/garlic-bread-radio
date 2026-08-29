@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Garlic Bread Radio</title>
     <link rel="stylesheet" href="css/base.css" />
-    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/about.css" />
   </head>
   <body>
     <header class="site-header">
@@ -42,47 +42,51 @@
 
       <nav id="nav">
         <ul>
-          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="index.html" class="nav-link">Home</a></li>
           <li><a href="setlists.html" class="nav-link">Setlists</a></li>
           <li><a href="#" class="nav-link">Listen Now</a></li>
           <li><a href="#" class="nav-link">Stats</a></li>
           <li><a href="#" class="nav-link">My Scrobbles</a></li>
-          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="about.html" class="nav-link active">About</a></li>
         </ul>
       </nav>
+      <p id="site-sub">Learn something new</p>
     </header>
 
-    <main class="home-main">
-      <section class="home-intro">
-        <h2>Welcome.</h2>
+    <main class="about-main">
+      <section class="about-intro">
+        <img class="gbr-logo" src="photos/garlicbread.png" alt="gbr-logo" />
+
         <p>
-          The official site of the world-renowned Garlic Bread Radio. Operating
-          every <span id="show-time">{day} at {time}</span> on WIUX's B-Side
-          Internet Radio, Garlic Bread can give you ska punk, bedroom pop,
-          experimental rap, acid jazz, grunge, neo soul, and anything else that
-          sounds good. Hosted by Simon. Website also by Simon.
+          Garlic Bread Radio started on 99.1 FM in fall of 2025, and it was
+          moved to B-Side Internet Radio in fall of 2026. Listening to and
+          discovering new music is one of my biggest hobbies, plus I'm studying
+          computer science. So in 2026 I made this site as a fun way to bridge
+          college radio and web development.
         </p>
 
         <br />
 
-        <p></p>
-      </section>
+        <p>
+          The tech stack is just HTML, CSS, and JavaScript so no need to be
+          impressed. The feature list was pretty simple so there was no reason
+          to build anything more complicated than a static site.
+        </p>
 
-      <section class="home-links">
-        <a class="home-link-card" href="https://www.wiux.org/">
-          <h3>WIUX</h3>
-          <p>The source.</p>
-        </a>
-        <a
-          class="home-link-card"
-          href="https://www.instagram.com/garlicbreadwiux"
-        >
-          <h3>Instagram</h3>
-          <p>
-            Send me song suggestions, criticize me, or just get updates. The
-            world is your oyster.
-          </p>
-        </a>
+        <br />
+
+        <p>
+          Album cover images in the setlist are grabbed from
+          <a
+            href="https://www.last.fm"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Last.fm</a
+          >. Sometimes the API might return a cover from a song's single
+          release, a compilation album cover, or no cover at all instead of the
+          actual album art. So if anything looks weird in the setlists, it's not
+          my fault...
+        </p>
       </section>
     </main>
 
@@ -102,5 +106,6 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/Observer.min.js"></script>
     <script src="js/base.js"></script>
+    <script src="js/about.js"></script>
   </body>
 </html>
