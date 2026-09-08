@@ -1,0 +1,20 @@
+[
+  { "artist": "Clairo", "album": "Charm", "image": "photos/album-art/clairo.jpg" },
+  { "artist": "Hum", "album": "Downward Is Heavenward", "image": "photos/album-art/hum.jpg" },
+  { "artist": "The Pharcyde", "album": "Bizarre Ride II the Pharcyde", "image": "photos/album-art/pharcyde.jpg" },
+  { "artist": "Blind Melon", "album": "Soup", "image": "photos/album-art/blindmelon.jpg" },
+  { "artist": "underscores", "album": "Wallsocket", "image": "photos/album-art/underscores.jpg" },
+  { "artist": "Electric Light Orchestra", "album": "Out of the Blue", "image": "photos/album-art/elo.jpg" },
+  { "artist": "Steely Dan", "album": "Can't Buy A Thrill", "image": "photos/album-art/steelydan.jpg" },
+  { "artist": "Mac DeMarco", "album": "Salad Days", "image": "photos/album-art/macdemarco.jpg" },
+  { "artist": "Gorillaz", "album": "Gorillaz", "image": "photos/album-art/gorillaz.jpg" },
+  { "artist": "Joey Bada$$", "album": "1999", "image": "photos/album-art/joey.jpg" },
+  { "artist": "Pinback", "album": "Pinback", "image": "photos/album-art/pinback.jpg" },
+  { "artist": "Steve Lacy", "album": "Steve Lacy's Demo", "image": "photos/album-art/stevelacy.jpg" },
+  { "artist": "The Dandy Warhols", "album": "The Dandy Warhols Come Down", "image": "photos/album-art/dandywarhols.jpg" },
+  { "artist": "Steve Miller Band", "album": "Fly Like an Eagle", "image": "photos/album-art/stevemiller.jpg" },
+  { "artist": "The Internet", "album": "Hive Mind", "image": "photos/album-art/internet.jpg" },
+  { "artist": "Nirvana", "album": "Bleach", "image": "photos/album-art/nirvana.jpg" },
+  { "artist": "Blur", "album": "Parklife", "image": "photos/album-art/blur.jpg" },
+  { "artist": "slayr", "album": "Half Blood", "image": "photos/album-art/slayr.jpg" }
+]

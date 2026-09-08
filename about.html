@@ -46,7 +46,6 @@
           <li><a href="setlists.html" class="nav-link">Setlists</a></li>
           <li><a href="#" class="nav-link">Listen Now</a></li>
           <li><a href="#" class="nav-link">Stats</a></li>
-          <li><a href="#" class="nav-link">My Scrobbles</a></li>
           <li><a href="about.html" class="nav-link active">About</a></li>
         </ul>
       </nav>
@@ -68,15 +67,16 @@
         <br />
 
         <p>
-          The tech stack is just HTML, CSS, and JavaScript so no need to be
-          impressed. The feature list was pretty simple so there was no reason
-          to build anything more complicated than a static site.
+          It's a not really an impressive tech stack (just HTML, CSS, and
+          JavaScript), but the feature list was pretty simple so there was no
+          reason to build anything more complicated than a static site.
         </p>
 
         <br />
 
         <p>
-          Album cover images in the setlist are grabbed from
+          Album cover images in the
+          <a href="setlists.html">Setlists</a> page are grabbed from
           <a
             href="https://www.last.fm"
             target="_blank"
@@ -87,6 +87,17 @@
           actual album art. So if anything looks weird in the setlists, it's not
           my fault...
         </p>
+
+        <p>
+          Here's a list of the amazing albums used in the header in case you
+          care.
+        </p>
+      </section>
+
+      <section class="about-albums">
+        <div id="album-list" class="album-grid" aria-live="polite">
+          <p class="loading-msg">One moment...</p>
+        </div>
       </section>
     </main>
 
@@ -102,6 +113,17 @@
     >
       &uarr;
     </button>
+
+    <!-- album card template -->
+    <template id="album-card-template">
+      <div class="album-card">
+        <img class="album-art" alt="" loading="lazy" />
+        <div class="album-meta">
+          <span class="album-title"></span>
+          <span class="album-artist"></span>
+        </div>
+      </div>
+    </template>
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/Observer.min.js"></script>
