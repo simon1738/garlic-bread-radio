@@ -17,5 +17,6 @@
   { "artist": "Nirvana", "album": "Bleach", "image": "photos/album-art/nirvana.jpg" },
   { "artist": "Blur", "album": "Parklife", "image": "photos/album-art/blur.jpg" },
   { "artist": "slayr", "album": "Half Blood", "image": "photos/album-art/slayr.jpg" },
-  { "artist": "Jamiroquai", "album": "Travelling Without Moving", "image": "photos/album-art/jamiroquai.jpg" }
+  { "artist": "Jamiroquai", "album": "Travelling Without Moving", "image": "photos/album-art/jamiroquai.jpg" },
+  { "artist": "Aphex Twin", "album": "Drukqs", "image": "photos/album-art/aphextwin.jpg" }
 ]
