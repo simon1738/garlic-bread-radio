@@ -1,0 +1,84 @@
+/* ---------- stats page ---------- */
+
+.stats-main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+/* ---------- summary stat ---------- */
+
+.stats-summary {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.stat-card {
+  display: inline-block;
+}
+
+.stat-value {
+  display: block;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1;
+  color: var(--purple);
+}
+
+.stat-label {
+  display: block;
+  margin-top: 0.35rem;
+  color: var(--text-gray);
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+}
+
+/* ---------- top artists ---------- */
+
+.stats-artists h2 {
+  text-align: center;
+  font-size: 1.3rem;
+  margin: 0 0 1.25rem;
+  color: var(--purple);
+}
+
+.artist-list {
+  list-style: none;
+  margin: 0;
+  padding: 0.25rem 1.5rem;
+  background: var(--card-bg);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.artist-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 0.95rem;
+}
+
+.artist-row:last-child {
+  border-bottom: none;
+}
+
+.artist-rank {
+  width: 1.75rem;
+  flex-shrink: 0;
+  color: var(--purple);
+  font-weight: bold;
+}
+
+.artist-name {
+  flex: 1;
+  min-width: 0;
+  font-weight: 600;
+}
+
+.artist-count {
+  color: var(--text-gray);
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}

@@ -44,8 +44,8 @@
         <ul>
           <li><a href="index.html" class="nav-link">Home</a></li>
           <li><a href="setlists.html" class="nav-link active">Setlists</a></li>
-          <li><a href="#" class="nav-link">Listen Now</a></li>
-          <li><a href="#" class="nav-link">Stats</a></li>
+          <li><a href="listen-now.html" class="nav-link">Listen Now</a></li>
+          <li><a href="stats.html" class="nav-link">Stats</a></li>
           <li><a href="about.html" class="nav-link">About</a></li>
         </ul>
       </nav>
@@ -60,12 +60,9 @@
           placeholder="Search for artists, tracks, or episodes..."
         />
 
-        <div class="sort-select-wrap">
-          <select id="sort-select" class="sort-select">
-            <option value="date-desc">Newest first</option>
-            <option value="date-asc">Oldest first</option>
-          </select>
-        </div>
+        <button id="sort-toggle" class="sort-toggle" type="button">
+          Newest first
+        </button>
       </div>
 
       <section id="episode-grid" class="episode-grid" aria-live="polite">

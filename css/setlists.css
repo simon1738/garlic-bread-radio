@@ -50,18 +50,11 @@
   box-shadow: 0 0 0 3px rgba(116, 78, 150, 0.2);
 }
 
-.sort-select-wrap {
-  position: relative;
+.sort-toggle {
   flex-shrink: 0;
-}
-
-.sort-select {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   box-sizing: border-box;
-  width: 100%;
-  padding: 0.75rem 2rem 0.75rem 1rem;
+  min-width: 9.5rem;
+  padding: 0.75rem 1.25rem;
   font: inherit;
   color: var(--text-gray);
   background-color: var(--card-bg);
@@ -73,24 +66,14 @@
     border-color 0.2s ease;
 }
 
-.sort-select:focus {
+.sort-toggle:hover {
+  color: var(--ink);
+}
+
+.sort-toggle:focus {
   outline: none;
   border-color: var(--purple);
   box-shadow: 0 0 0 3px rgba(116, 78, 150, 0.2);
-}
-
-.sort-select-wrap::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 1rem;
-  width: 0.5em;
-  height: 0.5em;
-  margin-top: -0.3em;
-  border-right: 2px solid var(--purple);
-  border-bottom: 2px solid var(--purple);
-  transform: rotate(45deg);
-  pointer-events: none;
 }
 
 @media (max-width: 480px) {

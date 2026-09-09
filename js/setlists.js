@@ -136,18 +136,22 @@ if (inputElement) {
 
 // ---- SORT ----
 
-const sortSelect = document.getElementById("sort-select");
+const sortToggle = document.getElementById("sort-toggle");
+let sortValue = "date-desc";
 
-if (sortSelect) {
-  sortSelect.addEventListener("change", () => {
-    const sortValue = sortSelect.value;
+if (sortToggle) {
+  sortToggle.addEventListener("click", () => {
+    sortValue = sortValue === "date-desc" ? "date-asc" : "date-desc";
+    sortToggle.textContent =
+      sortValue === "date-desc" ? "Newest first" : "Oldest first";
+
     const grid = document.getElementById("episode-grid");
     grid.innerHTML = "";
 
     let sortedEpisodes = [...episodes];
     if (sortValue === "date-desc") {
       sortedEpisodes.sort((a, b) => new Date(b.date) - new Date(a.date));
-    } else if (sortValue === "date-asc") {
+    } else {
       sortedEpisodes.sort((a, b) => new Date(a.date) - new Date(b.date));
     }
 

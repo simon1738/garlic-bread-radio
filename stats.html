@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Garlic Bread Radio</title>
+    <title>Stats - Garlic Bread Radio</title>
     <link rel="stylesheet" href="css/base.css" />
-    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/stats.css" />
   </head>
   <body>
     <header class="site-header">
@@ -42,46 +42,29 @@
 
       <nav id="nav">
         <ul>
-          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="index.html" class="nav-link">Home</a></li>
           <li><a href="setlists.html" class="nav-link">Setlists</a></li>
           <li><a href="listen-now.html" class="nav-link">Listen Now</a></li>
-          <li><a href="stats.html" class="nav-link">Stats</a></li>
+          <li><a href="stats.html" class="nav-link active">Stats</a></li>
           <li><a href="about.html" class="nav-link">About</a></li>
         </ul>
       </nav>
+      <p id="site-sub">The numbers</p>
     </header>
 
-    <main class="home-main">
-      <section class="home-intro">
-        <h2>Welcome.</h2>
-        <p>
-          The official site of the world-renowned Garlic Bread Radio. Operating
-          every <span id="show-time">Thursday at 1pm</span> on WIUX's B-Side
-          Internet Radio, Garlic Bread can give you ska punk, bedroom pop,
-          experimental hip-hop, acid jazz, grunge, neo soul, and anything else
-          that sounds good. Hosted by Simon. Website also by Simon.
-        </p>
-
-        <br />
-
-        <p></p>
+    <main class="stats-main">
+      <section class="stats-summary">
+        <div class="stat-card">
+          <span class="stat-value" id="episode-count">–</span>
+          <span class="stat-label">shows to date</span>
+        </div>
       </section>
 
-      <section class="home-links">
-        <a class="home-link-card" href="https://www.wiux.org/">
-          <h3>WIUX</h3>
-          <p>The source.</p>
-        </a>
-        <a
-          class="home-link-card"
-          href="https://www.instagram.com/garlicbreadwiux"
-        >
-          <h3>Instagram</h3>
-          <p>
-            Send me song suggestions, criticize me, or just get updates. The
-            world is your oyster.
-          </p>
-        </a>
+      <section class="stats-artists">
+        <h2>Top 20 Most-Played Artists</h2>
+        <ol id="artist-list" class="artist-list" aria-live="polite">
+          <li class="loading-msg">One moment...</li>
+        </ol>
       </section>
     </main>
 
@@ -98,8 +81,18 @@
       &uarr;
     </button>
 
+    <!-- artist row template -->
+    <template id="artist-row-template">
+      <li class="artist-row">
+        <span class="artist-rank"></span>
+        <span class="artist-name"></span>
+        <span class="artist-count"></span>
+      </li>
+    </template>
+
     <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/Observer.min.js"></script>
     <script src="js/base.js"></script>
+    <script src="js/stats.js"></script>
   </body>
 </html>

@@ -1,0 +1,76 @@
+/* ---------- listen now page ---------- */
+
+.listen-now-main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+.listen-now-intro {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.listen-now-intro p {
+  color: var(--text-gray);
+  line-height: 1.6;
+  max-width: 640px;
+  margin: 0 auto 1rem;
+}
+
+.screenshot {
+  display: block;
+  max-width: 320px;
+  width: 100%;
+  height: auto;
+  margin: 1.5rem auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------- header album list ---------- */
+
+.listen-now-albums {
+  margin-top: 1rem;
+}
+
+.album-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.album-card {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  background: var(--card-bg);
+  color: var(--ink);
+  border-radius: 10px;
+  padding: 0.75rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.album-art {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.album-meta {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.album-title {
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.album-artist {
+  color: var(--text-gray);
+  font-size: 0.85rem;
+}
