@@ -54,6 +54,7 @@ body {
 
 #wiux-link {
   text-decoration: none;
+  color: var(--purple-dark);
 }
 
 #site-title {
