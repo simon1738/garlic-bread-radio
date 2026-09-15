@@ -6,6 +6,16 @@ function getTotalEpisodes(episodes) {
   return episodes.length;
 }
 
+function getTotalArtists(episodes) {
+  const artistSet = new Set();
+  episodes.forEach(({ tracklist }) => {
+    tracklist.forEach(({ artist }) => {
+      artistSet.add(artist);
+    });
+  });
+  return artistSet.size;
+}
+
 function getTopArtists(episodes, limit) {
   const artistCounts = {};
   episodes.forEach(({ tracklist }) => {
@@ -35,13 +45,15 @@ function renderArtistRow(rank, artist, count) {
 async function init() {
   const list = document.getElementById("artist-list");
   const episodeCountEl = document.getElementById("episode-count");
-  if (!list || !episodeCountEl) return; // not on the stats page
+  const artistCountEl = document.getElementById("artist-count");
+  if (!list || !episodeCountEl || !artistCountEl) return; // not on the stats page
 
   try {
     const res = await fetch("data/episodes.json");
     episodes = await res.json();
 
     episodeCountEl.textContent = getTotalEpisodes(episodes);
+    artistCountEl.textContent = getTotalArtists(episodes);
 
     list.innerHTML = "";
     getTopArtists(episodes, 20).forEach(({ artist, count }, i) =>

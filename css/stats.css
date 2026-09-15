@@ -9,6 +9,10 @@
 /* ---------- summary stat ---------- */
 
 .stats-summary {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
   text-align: center;
   margin-bottom: 2.5rem;
 }
