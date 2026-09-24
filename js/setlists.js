@@ -3,6 +3,26 @@
 const LASTFM_API_KEY = "287bf7be3a6bde9f6174c639a306b459";
 const LASTFM_ENDPOINT = "https://ws.audioscrobbler.com/2.0/";
 let episodes = [];
+let seasonEpisodeNumbers = {};
+
+// numbers each episode within its own season, keyed by episode id
+function computeSeasonEpisodeNumbers(allEpisodes) {
+  const bySeason = {};
+  allEpisodes.forEach((ep) => {
+    (bySeason[ep.season] ||= []).push(ep);
+  });
+
+  const numbering = {};
+  Object.values(bySeason).forEach((seasonEpisodes) => {
+    seasonEpisodes
+      .slice()
+      .sort((a, b) => new Date(a.date) - new Date(b.date))
+      .forEach((ep, i) => {
+        numbering[ep.id] = i + 1;
+      });
+  });
+  return numbering;
+}
 
 // ---- HELPERS ----
 
@@ -37,8 +57,9 @@ function renderEpisode(episode, index) {
   const cardTemplate = document.getElementById("episode-card-template");
   const node = cardTemplate.content.cloneNode(true);
 
+  const episodeNumber = seasonEpisodeNumbers[episode.id];
   node.querySelector(".episode-number").textContent =
-    `EP ${String(episode.id)}`;
+    `S${episode.season} E${episodeNumber}`;
   node.querySelector(".episode-date").textContent = episode.date;
   node.querySelector(".episode-title").textContent = episode.title;
 
@@ -93,51 +114,56 @@ async function init() {
   try {
     const res = await fetch("data/episodes.json");
     episodes = await res.json();
+    seasonEpisodeNumbers = computeSeasonEpisodeNumbers(episodes);
 
-    grid.innerHTML = "";
-
-    // most recent episode first
-    episodes
-      .slice()
-      .sort((a, b) => new Date(b.date) - new Date(a.date))
-      .forEach((episode, i) => grid.appendChild(renderEpisode(episode, i)));
+    renderGrid();
   } catch (err) {
     grid.innerHTML = `<p class="loading-msg">Couldn't load episodes</p>`;
     console.error(err);
   }
 }
 
-// ---- SEARCH ----
+// ---- SEARCH + SORT ----
 const inputElement = document.getElementById("search");
-
-if (inputElement) {
-  inputElement.addEventListener("input", () => {
-    const query = inputElement.value.toLowerCase();
-    const grid = document.getElementById("episode-grid");
-    grid.innerHTML = "";
-    episodes
-      .filter(
-        (episode) =>
-          episode.title.toLowerCase().includes(query) ||
-          episode.description?.toLowerCase().includes(query) ||
-          episode.tracklist.some(
-            (t) =>
-              t.track.toLowerCase().includes(query) ||
-              t.artist.toLowerCase().includes(query),
-          ),
-      )
-      .forEach((episode, i) => grid.appendChild(renderEpisode(episode, i)));
-
-    if (grid.innerHTML === "") {
-      grid.innerHTML = `<p class="loading-msg">Didn't find anything...</p>`;
-    }
-  });
-}
-
-// ---- SORT ----
-
 const sortToggle = document.getElementById("sort-toggle");
 let sortValue = "date-desc";
+
+function getFilteredSortedEpisodes() {
+  const query = inputElement ? inputElement.value.toLowerCase() : "";
+
+  const filtered = episodes.filter(
+    (episode) =>
+      episode.title.toLowerCase().includes(query) ||
+      episode.description?.toLowerCase().includes(query) ||
+      episode.tracklist.some(
+        (t) =>
+          t.track.toLowerCase().includes(query) ||
+          t.artist.toLowerCase().includes(query),
+      ),
+  );
+
+  return filtered.sort((a, b) =>
+    sortValue === "date-desc"
+      ? new Date(b.date) - new Date(a.date)
+      : new Date(a.date) - new Date(b.date),
+  );
+}
+
+function renderGrid() {
+  const grid = document.getElementById("episode-grid");
+  const results = getFilteredSortedEpisodes();
+
+  grid.innerHTML = "";
+  results.forEach((episode, i) => grid.appendChild(renderEpisode(episode, i)));
+
+  if (grid.innerHTML === "") {
+    grid.innerHTML = `<p class="loading-msg">Didn't find anything...</p>`;
+  }
+}
+
+if (inputElement) {
+  inputElement.addEventListener("input", renderGrid);
+}
 
 if (sortToggle) {
   sortToggle.addEventListener("click", () => {
@@ -145,19 +171,7 @@ if (sortToggle) {
     sortToggle.textContent =
       sortValue === "date-desc" ? "Newest first" : "Oldest first";
 
-    const grid = document.getElementById("episode-grid");
-    grid.innerHTML = "";
-
-    let sortedEpisodes = [...episodes];
-    if (sortValue === "date-desc") {
-      sortedEpisodes.sort((a, b) => new Date(b.date) - new Date(a.date));
-    } else {
-      sortedEpisodes.sort((a, b) => new Date(a.date) - new Date(b.date));
-    }
-
-    sortedEpisodes.forEach((episode, i) =>
-      grid.appendChild(renderEpisode(episode, i)),
-    );
+    renderGrid();
   });
 }
 

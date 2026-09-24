@@ -1,6 +1,30 @@
 [
   {
+    "id": 25,
+    "season": 3,
+    "title": "First Show Back",
+    "date": "September 24, 2026",
+    "description": "First songs on the album. ALSO first show on B-Side",
+    "tracklist": [
+      { "artist": "Hum", "track": "Iron Clad Lou" },
+      { "artist": "A Tribe Called Quest", "track": "Excursions" },
+      { "artist": "Beck", "track": "E-Pro" },
+      { "artist": "Stereolab", "track": "Brakhage" },
+      { "artist": "slayr", "track": "Brain Fog" },
+      { "artist": "Dinosaur Jr.", "track": "Almost Ready" },
+      { "artist": "Basement Jaxx", "track": "Good Luck" },
+      { "artist": "Blind Melon", "track": "Galaxie" },
+      { "artist": "Fousheé", "track": "birds, bees" },
+      { "artist": "Jefferson Starship", "track": "Cruisin'" },
+      { "artist": "Sex Pistols", "track": "Holidays In the Sun" },
+      { "artist": "matt proxy", "track": "5 (with fakemink)" }
+
+    ]
+  },
+
+  {
     "id": 24,
+    "season": 2,
     "title": "JIMMY AND KYLER",
     "date": "May 5, 2026",
     "description": "Two of Garlic Bread's biggest supporters share their invaluable musical wisdom for the season finale",
@@ -21,6 +45,7 @@
   
   {
     "id": 23,
+    "season": 2,
     "title": "Whatever",
     "date": "April 28, 2026",
     "description": "Almost the end of the semester...",
@@ -42,6 +67,7 @@
   
   {
     "id": 22,
+    "season": 2,
     "title": "Harmonica",
     "date": "April 14, 2026",
     "description": "Blues Traveler makes Garlic Bread history as the first artist to have multiple songs in the same set because John Popper is a harmonica wizard",
@@ -62,6 +88,7 @@
   
   {
     "id": 21,
+    "season": 2,
     "title": "Lovely Songs for Lovely Weather",
     "date": "April 7, 2026",
     "description": null,
@@ -84,6 +111,7 @@
   
   {
     "id": 20,
+    "season": 2,
     "title": "INTERNATIONAL",
     "date": "March 31, 2026",
     "description": "Shoutout to Kyler for the idea and to everyone who contributed a song",
@@ -103,6 +131,7 @@
   
   {
     "id": 19,
+    "season": 2,
     "title": "Los Angeles",
     "date": "March 24, 2026",
     "description": null,
@@ -124,6 +153,7 @@
   
   {
     "id": 18,
+    "season": 2,
     "title": "International Women's Day",
     "date": "March 10, 2026",
     "description": "Shoutout to every woman",
@@ -145,6 +175,7 @@
   
   {
     "id": 17,
+    "season": 2,
     "title": "Songs That Aliens Would Probably Like",
     "date": "March 3, 2026",
     "description": null,
@@ -164,6 +195,7 @@
 
   {
     "id": 16,
+    "season": 2,
     "title": "Black History Month",
     "date": "February 24, 2026",
     "description": "Next year this will be a whole month of shows",
@@ -185,6 +217,7 @@
 
   {
     "id": 15,
+    "season": 2,
     "title": "Valentine's Day",
     "date": "February 17, 2026",
     "description": "(Songs with love in the title)",
@@ -204,6 +237,7 @@
   
   {
     "id": 14,
+    "season": 2,
     "title": "Names",
     "date": "February 3, 2026",
     "description": null,
@@ -226,6 +260,7 @@
 
   {
     "id": 13,
+    "season": 2,
     "title": "First Show Back",
     "date": "January 27, 2026",
     "description": "First songs on the album",
@@ -248,6 +283,7 @@
 
   {
     "id": 12,
+    "season": 1,
     "title": "wgatever i want",
     "date": "December 17, 2025",
     "description": "Misspelled it in the Instagram post which means it's too late to fix now",
@@ -269,6 +305,7 @@
   
   {
     "id": 11,
+    "season": 1,
     "title": "Awesome Riffs",
     "date": "December 10, 2025",
     "description": null,
@@ -291,6 +328,7 @@
   
   {
     "id": 10,
+    "season": 1,
     "title": "Winter",
     "date": "December 3, 2025",
     "description": null,
@@ -313,6 +351,7 @@
   
   {
     "id": 9,
+    "season": 1,
     "title": "70s Rock",
     "date": "November 19, 2025",
     "description": "Shoutout to Owen for the idea. Unfortunately Games People Play is NOT from the 70s",
@@ -334,6 +373,7 @@
 
   {
     "id": 8,
+    "season": 1,
     "title": "Food",
     "date": "November 12, 2025",
     "description": null,
@@ -353,6 +393,7 @@
   
   {
     "id": 7,
+    "season": 1,
     "title": "Animals",
     "date": "November 5, 2025",
     "description": null,
@@ -375,6 +416,7 @@
 
   {
     "id": 6,
+    "season": 1,
     "title": "HALLOWEEN!!!!!",
     "date": "October 29, 2025",
     "description": null,
@@ -396,6 +438,7 @@
 
   {
     "id": 5,
+    "season": 1,
     "title": "Fall",
     "date": "October 22, 2025",
     "description": null,
@@ -419,6 +462,7 @@
   
   {
     "id": 4,
+    "season": 1,
     "title": "TV/Movies",
     "date": "October 15, 2025",
     "description": null,
@@ -440,6 +484,7 @@
 
   {
     "id": 3,
+    "season": 1,
     "title": "Colors",
     "date": "October 8, 2025",
     "description": null,
@@ -461,6 +506,7 @@
 
   {
     "id": 2,
+    "season": 1,
     "title": "Songs I Listened to This Summer",
     "date": "October 1, 2025",
     "description": null,
@@ -482,6 +528,7 @@
 
   {
     "id": 1,
+    "season": 1,
     "title": "First Show EVER",
     "date": "September 9, 2025",
     "description": "First songs on the album",
