@@ -1,5 +1,29 @@
 [
   {
+    "id": 26,
+    "season": 3,
+    "title": "Songs I Listened to This Summer",
+    "date": "October 1, 2026",
+    "description": "Yeah it's October now whatever",
+    "tracklist": [
+      { "artist": "Three Dog Night", "track": "Shambala" },
+      { "artist": "Sixpence None the Richer", "track": "Field of Flowers" },
+      { "artist": "Darondo", "track": "Didn't I" },
+      { "artist": "Gucci Mane", "track": "Have It All (Feat. Pharrell)" },
+      { "artist": "Triste Janero", "track": "In the Garden" },
+      { "artist": "Grandaddy", "track": "A.M. 180" },
+      { "artist": "The Internet", "track": "La Di Da" },
+      { "artist": "Sade", "track": "Cherry Pie" },
+      { "artist": "The Cribs", "track": "You Were Always the One" },
+      { "artist": "Monomono", "track": "Tire Loma da Nigbehin" },
+      { "artist": "Liim", "track": "Buttas On" },
+      { "artist": "The Beatles", "track": "Do You Want to Know a Secret" },
+      { "artist": "Couting Crows", "track": "Accidentally In Love" }
+
+    ]
+  },
+  
+  {
     "id": 25,
     "season": 3,
     "title": "First Show Back",
@@ -18,7 +42,6 @@
       { "artist": "Jefferson Starship", "track": "Cruisin'" },
       { "artist": "Sex Pistols", "track": "Holidays In the Sun" },
       { "artist": "matt proxy", "track": "5 (with fakemink)" }
-
     ]
   },
 
