@@ -1,5 +1,27 @@
 [
   {
+    "id": 27,
+    "season": 3,
+    "title": "Fall",
+    "date": "October 8, 2026",
+    "description": "what's wrong with me suggested by Janice (shoutout)",
+    "tracklist": [
+      { "artist": "The Church", "track": "Under the Milky Way" },
+      { "artist": "Ween", "track": "I Don't Want It" },
+      { "artist": "The Pharcyde", "track": "Otha Fish" },
+      { "artist": "Frank Black", "track": "I Heard Ramona Sing" },
+      { "artist": "MIKE", "track": "Snake Charm" },
+      { "artist": "Lilys", "track": "Ginger" },
+      { "artist": "Alex G", "track": "Crab" },
+      { "artist": "Olivia Rodrigo", "track": "what's wrong with me" },
+      { "artist": "The Autocollants", "track": "Apple Vines" },
+      { "artist": "Nirvana", "track": "Marigold" },
+      { "artist": "The American Analog Set", "track": "The Kindness of Strangers" },
+      { "artist": "Robert Glasper Experiment", "track": "Afro Blue (feat. Erykah Badu)" }
+    ]
+  },
+  
+  {
     "id": 26,
     "season": 3,
     "title": "Songs I Listened to This Summer",
