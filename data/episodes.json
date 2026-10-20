@@ -1,5 +1,27 @@
 [
   {
+    "id": 28,
+    "season": 3,
+    "title": "Ska Punk",
+    "date": "October 15, 2026",
+    "description": "THE JESTERS DO NOT HAVE MUSIC ON STREAMING SERVICES SO THIS WAS A ONCE IN A LIFETIME EXPERIENCE. Closure is from their 1998 debut album \"...Which Is Nice\"",
+    "tracklist": [
+      { "artist": "Operation Ivy", "track": "Sound System" },
+      { "artist": "Fishbone", "track": "Ma and Pa" },
+      { "artist": "The Mighty Mighty Bosstones", "track": "Devil's Night Out" },
+      { "artist": "Sublime", "track": "We're Only Gonna Die for Our Arrogance" },
+      { "artist": "No Doubt", "track": "Total Hate '95" },
+      { "artist": "Reel Big Fish", "track": "Sell Out" },
+      { "artist": "Save Ferris", "track": "Nobody But Me" },
+      { "artist": "Goldfinger", "track": "Superman" },
+      { "artist": "The Jesters", "track": "Closure" },
+      { "artist": "Catch 22", "track": "9mm And A Three Piece Suit" },
+      { "artist": "Less Than Jake", "track": "All My Best Friends Are Metalheads" },
+      { "artist": "Streetlight Manifesto", "track": "The Three of Us" }
+    ]
+  },
+
+  {
     "id": 27,
     "season": 3,
     "title": "Fall",
