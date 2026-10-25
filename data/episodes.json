@@ -1,5 +1,32 @@
 [
   {
+    "id": 29,
+    "season": 3,
+    "title": "Numbers",
+    "date": "October 22, 2026",
+    "description": null,
+    "tracklist": [
+      { "artist": "Chicago", "track": "25 Or 6 To 4" },
+      { "artist": "Lucy Bedroque", "track": "2010 Justin Bieber" },
+      { "artist": "Mudhoney", "track": "Twenty Four" },
+      { "artist": "underscores", "track": "Seventyseven dog years" },
+      { "artist": "Babes In Toyland", "track": "Sweet '69" },
+      { "artist": "Count Bass D", "track": "Seven Years" },
+      { "artist": "Crystal Castles", "track": "1991" },
+      { "artist": "Edwin Starr", "track": "Twenty Five Miles" },
+      { "artist": "Funk Revelation", "track": "2 Be Free" },
+      { "artist": "Gorillaz", "track": "5/4" },
+      { "artist": "Steve Lacy", "track": "4Real" },
+      { "artist": "No Doubt", "track": "Six Feet Under" },
+      { "artist": "Jean Dawson", "track": "THREE HEADS*" },
+      { "artist": "Mac Demarco", "track": "One Another" },
+      { "artist": "Green Day", "track": "409 In Your Coffeemaker" }
+
+
+    ]
+  },
+
+  {
     "id": 28,
     "season": 3,
     "title": "Ska Punk",
