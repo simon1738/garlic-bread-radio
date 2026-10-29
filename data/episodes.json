@@ -1,5 +1,27 @@
 [
   {
+    "id": 30,
+    "season": 3,
+    "title": "HALLOWEEN",
+    "date": "October 29, 2026",
+    "description": null,
+    "tracklist": [
+      { "artist": "King's X", "track": "Over My Head" },
+      { "artist": "Kansas", "track": "The Spider" },
+      { "artist": "Steve Lacy", "track": "Dark Red" },
+      { "artist": "Ramones", "track": "Pet Sematary" },
+      { "artist": "Geto Boys", "track": "Mind Playing Tricks on Me" },
+      { "artist": "Redbone", "track": "The Witch Queen of New Orleans" },
+      { "artist": "L7", "track": "Monster" },
+      { "artist": "Alice In Chains", "track": "Heaven Beside You" },
+      { "artist": "Dusty Springfield", "track": "Spooky" },
+      { "artist": "AC/DC", "track": "Hells Bells" },
+      { "artist": "Creedence Clearwater Revival", "track": "Tombstone Shadow" },
+      { "artist": "45 Grave", "track": "Surf Bat" }
+    ]
+  },
+
+  {
     "id": 29,
     "season": 3,
     "title": "Numbers",
@@ -21,8 +43,6 @@
       { "artist": "Jean Dawson", "track": "THREE HEADS*" },
       { "artist": "Mac Demarco", "track": "One Another" },
       { "artist": "Green Day", "track": "409 In Your Coffeemaker" }
-
-
     ]
   },
 
