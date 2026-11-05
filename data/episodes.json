@@ -1,5 +1,29 @@
 [
   {
+    "id": 31,
+    "season": 3,
+    "title": "Fall (again)",
+    "date": "November 5, 2026",
+    "description": null,
+    "tracklist": [
+      { "artist": "ernest rareberrg", "track": "Jumbo Jets" },
+      { "artist": "Title Fight", "track": "Where Am I?" },
+      { "artist": "Mac DeMarco", "track": "Powers Back On" },
+      { "artist": "Thundercat", "track": "Lava Lamp" },
+      { "artist": "Pinhead Gunpowder", "track": "2nd Street" },
+      { "artist": "Sponge", "track": "Molly (Sixteen Candles)" },
+      { "artist": "Nas", "track": "Represent" },
+      { "artist": "The Smashing Pumpkins", "track": "The Boy" },
+      { "artist": "J.K. & Co.", "track": "Christine" },
+      { "artist": "The Whirly Birds", "track": "No Jazz Before a Rumble" },
+      { "artist": "Herbie Hancock", "track": "Cantaloupe Island" },
+      { "artist": "Mock Orange", "track": "We Work" },
+      { "artist": "Defiance, Ohio", "track": "Calling Old Friends" },
+      { "artist": "Gorillaz & MF DOOM", "track": "November Has Come" }
+    ]
+  },
+
+  {
     "id": 30,
     "season": 3,
     "title": "HALLOWEEN",
@@ -41,7 +65,7 @@
       { "artist": "Steve Lacy", "track": "4Real" },
       { "artist": "No Doubt", "track": "Six Feet Under" },
       { "artist": "Jean Dawson", "track": "THREE HEADS*" },
-      { "artist": "Mac Demarco", "track": "One Another" },
+      { "artist": "Mac DeMarco", "track": "One Another" },
       { "artist": "Green Day", "track": "409 In Your Coffeemaker" }
     ]
   },
@@ -175,7 +199,7 @@
       { "artist": "Queens of the Stone Age", "track": "Little Sister" },
       { "artist": "Jane Remover", "track": "Your Clothes" },
       { "artist": "Buzzcocks", "track": "Ever Fallen in Love (With Someone You Shouldn't've)" },
-      { "artist": "Mac Demarco", "track": "Treat Her Better" }
+      { "artist": "Mac DeMarco", "track": "Treat Her Better" }
     ]
   },
   
@@ -519,7 +543,7 @@
       { "artist": "Viagra Boys", "track": "Secret Canine Agent" },
       { "artist": "That Dog.", "track": "Ms. Wrong" },
       { "artist": "Papa Bear & His Cubs", "track": "Sweetest Thing on This Side of Heaven" },
-      { "artist": "DOMi & JD Beck & Mac Demarco", "track": "TWO SHRiMPS" },
+      { "artist": "DOMi & JD Beck & Mac DeMarco", "track": "TWO SHRiMPS" },
       { "artist": "Toadies", "track": "Possum Kingdom" },
       { "artist": "Sweet", "track": "Fox On the Run" },
       { "artist": "Ana Frango Elétrico", "track": "Electric Fish" },
@@ -601,19 +625,19 @@
     "season": 1,
     "title": "Colors",
     "date": "October 8, 2025",
-    "description": null,
+    "description": "Dirty Harry was picked because it features Bootie Brown. Last.fm won't fetch the album cover if I include his name though",
     "tracklist": [
       { "artist": "Chenayder & MAVI", "track": "Colors" },
       { "artist": "Green Day", "track": "At the Library" },
       { "artist": "Yellow Magic Orchestra", "track": "Technopolis" },
       { "artist": "Earth, Wind & Fire", "track": "Evolution Orange" },
       { "artist": "Goldfinger", "track": "Superman" },
-      { "artist": "Mac Demarco", "track": "Blue Boy" },
+      { "artist": "Mac DeMarco", "track": "Blue Boy" },
       { "artist": "No Doubt", "track": "Platinum Blonde Life" },
       { "artist": "Jamiroquai", "track": "Black Devil Car" },
       { "artist": "Jean Dawson", "track": "Black Sugar" },
       { "artist": "Stevie Wonder", "track": "Golden Lady" },
-      { "artist": "Gorillaz", "track": "Dirty Harry (feat. Bootie Brown)" },
+      { "artist": "Gorillaz", "track": "Dirty Harry" },
       { "artist": "Blur", "track": "Blue Jeans" }
     ]
   },
